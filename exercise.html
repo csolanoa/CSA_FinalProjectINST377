@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Exercise Finder</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="exercise.html">Exercise Finder</a></li>
+      <li><a href="favorites.html">Favorites</a></li>
+    </ul>
+  </nav>
+
+  <h1>Exercise Finder</h1>
+
+  <div class="section">
+    <h2>Search Exercises</h2>
+
+    <form id="exerciseForm">
+      <label for="muscleSelect">Choose Muscle:</label>
+      <select id="muscleSelect"></select>
+      <br><br>
+    
+      <button type="submit" class="mainButton">Find Exercises</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Featured Exercises</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper" id="exerciseSlides"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Exercise Category Chart</h2>
+    <canvas id="exerciseChart"></canvas>
+  </div>
+
+  <div class="section">
+    <h2>Exercise Results</h2>
+    <div id="exerciseResults"></div>
+  </div>
+
+</body>
+</html>
